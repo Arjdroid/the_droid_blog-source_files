@@ -1,6 +1,6 @@
 # the_droid_blog-source_files
 
-> A repository that contains the source files for my blog website, built with [hugo](https://gohugo.io).
+> A repository that contains the source files for [my blog website](https://arjdroid.github.io), built with [hugo](https://gohugo.io).
 
 <p align="center">
 <img src="./Droid_Blog-Comp_Light-Shadowed.png" alt="Screenshot">
