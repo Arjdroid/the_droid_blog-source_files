@@ -2,7 +2,7 @@
 
 > A repository that contains the source files for my blog website, built with [hugo](https://gohugo.io).
 
-![Screenshot](./Screenshot.png)
+![Screenshot](./Droid_Blog-Comp_Dark-Shadowed.png)
 
 <p align="center"><i>A screenshot of the website's landing page in dark mode</i></p>
 
