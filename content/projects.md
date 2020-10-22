@@ -2,5 +2,5 @@
 title = "Projects"
 slug = "projects"
 +++
-
-I am currently working on developing [this](http://localhost:1313/) website!
+---
+I have many projects, if you would like to view what projects I'm currently working on / have worked on, please view [my github account](https://github.com/Arjdroid).
