@@ -50,18 +50,24 @@ So, the first thing we had to do was configure the Raspberry Pi4, it was pretty 
 sudo raspi-config
 ```
 
-And viola! A pseudo command-line text-based G.U.I appears which allows you to configure most of the Raspberry Pi's settings with arrow keys, a spacebar and an enter key. I'm skipping the configuration part, **if you don't know how to configure your Raspberry Pi**, I highly reccomend that you check out [this](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) article by the raspberrypi foundation about setting up your Pi, it will be greatly helpful!
+And viola! A pseudo command-line text-based G.U.I appears which allows you to configure most of the Raspberry Pi's settings with arrow keys, a spacebar and an enter key. I'm skipping the configuration part;
+
+> ### If you don't know how to configure your Raspberry Pi:
+>
+> I highly recommend that you check out **[this](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up)** article by the raspberrypi foundation about setting up your Pi, it will be greatly helpful!
 
 ## Hard Drive Configuration
 
 
-Now, all we have got to do is connect to it via SSH;
+Now, all we have got to do is connect to it via SSH; (**THIS IS ONLY IF YOU DO NOT HAVE A KEYBOARD AND MOUSE AND MONITOR CONNECTED TO THE PI, IF YOU DO HAVE THEM CONNECTED, SKIP THE SSH STEP, YOU CAN PERFORM ALL YOUR COMMANDS ON THE TERMINAL APP IN THE PI**)
 
 On your own laptop/desktop terminal:
 
 ```bash
 ssh username@ipa.ddr.ess.opi
 ```
+
+Remember to replace `username` with your pi's username, most of the time it'll be `pi` and replace `ipa.ddr.ess.opi` with the ip address of your pi, it'll look something like this, `192.168.1.180`, to be sure of what it is, you can access
 
 And enter your credentials!
 
@@ -89,36 +95,42 @@ Device    Boot Start           End    Sectors   Size  Id  Type
 
 You would see many drives and each will have information in a format like this, the way you would identify your external hard drive would be by the size, so there would be many disks with different names like `/dev/sda` and `/dev/sbd` and things like that but next to the name, there is the size, `93.2 GiB` or something similar, your drive may be 100Gigabytes but the size shown in the terminal will be smaller like 93.2Gigabytes but it should be close enough for you to identify it.
 
-So if you had a 1TB Hard Drive, it may say the size is something like 932 Gigabytes so be on the lookout for that.
+So suppose you had connected a 1TB Hard Drive, it may say the size is something like 932 Gigabytes so be on the lookout for that.
 
-Under the disk information, it would give `Device` information, each `Device` is a volume or partition on the drive, each partition is named with the name of the disk suffixed with the partition number if it is a logical partition.
+Under the disk information, it would give `Device` information, each `Device` is a volume or partition on the drive, each partition is named with the name of the disk suffixed with the partition number if it is a logical primary partition.
 
 In the sample partition I gave was `/dev/sda1`, it is the only partition in the drive and as you can see, it's `End` byte is the last byte in the whole drive so it's size encompasses the entire drive.
 
 This is the volume that you will be mounting using as the 'drive'.
 
 ### Incase Your Drive Is Un-Initialised (Doesn't Have Any Partitions / Volumes) OR You Want To Start Off Fresh
-Run the partition editor for that drive;
-
-```bash
-sudo fdisk -l /dev/sda
-```
-
-Then, press 'd' to delete every partition in the drive, just in case, **YOU WILL LOSE YOUR DATA IF THERE WAS ANY PRESENT**.
-
-Then, press 'n' to create a new partition, you can just keep pressing enter to all the questions, that will make you enter the default configuration details for the partition.
-
-This will create a single partition that encompasses the entire drive.
-
-This partition will have the default linux ext4 filesystem, if you wish to use NTFS, you should know how to do that, don't worry though, ext4 is still readable to Windows!
-
-If you want to create more than one partition, you should know how to do that.
-
-Now check whether you've actually gotten a new volume on the drive.
-
-```bash
-sudo fdisk -l
-```
+> Run the partition editor for that drive;
+>
+> ```bash
+> sudo fdisk -l /dev/sda
+> ```
+>
+> Then, press 'd' to delete every partition in the drive, just in case, **YOU WILL LOSE YOUR DATA IF THERE WAS ANY PRESENT**.
+>
+> Then, press 'n' to create a new partition, you can just keep pressing enter to all the questions, that will make you enter the default configuration details for the partition.
+>
+> This will create a single partition that encompasses the entire drive.
+>
+> This partition will have the default linux ext4 filesystem, if you wish to use NTFS, you should know how to do that, don't worry though, ext4 is still readable to Windows!
+>
+> If you want to create more than one partition, you should know how to do that.
+>
+> Now check whether you've actually gotten a new volume on the drive.
+>
+> ```bash
+> sudo fdisk -l
+> ```
+>
+> And be on the lookout for a result similar to the one previously mentioned;
+> ```
+> Device    Boot Start           End    Sectors   Size  Id  Type
+> /dev/sda1       2048  107374127424  123513245  93.2G   9  HPFS/NTFS/exFAT
+> ```
 
 ## Mounting The Volume
 
