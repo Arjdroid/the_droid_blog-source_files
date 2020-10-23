@@ -1,4 +1,4 @@
-baseurl = "http://arjdroid.github.io"
+baseurl = "https://arjdroid.github.io"
 title = "The Droid Blog"
 
 theme = "hugo-coder"
@@ -61,7 +61,7 @@ disable_comments="true"
     #siteID = "ABCDE"
     # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
     #serverURL = "analytics.example.com"
-    
+
 # If you want to use plausible(https://plausible.io) for analytics, add this section
 #[params.plausibleAnalytics]
     #domain = "example.com"
