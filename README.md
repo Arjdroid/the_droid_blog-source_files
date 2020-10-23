@@ -14,7 +14,7 @@ This repository is a repository meant to contain the source files that I will us
   
 ## Flexibility
 
-The static pages built with the [hugo engine](https://gohugo.io) are very flexible in terms of their appearance and the devices which they can be viewed upon. The specific hugo theme which I have used, [hugo coder](https://themes.gohugo.io/hugo-coder/), is a theme which contains [javascript](https://www.w3schools.com/js/DEFAULT.asp) code that allows the whole site to switch between dark mode and light mode. The site can adapt and change its size in order to be suitable to be viewed upon almost any device.
+The static pages built with the [hugo engine](https://gohugo.io) are very flexible in terms of their appearance and the devices which they can be viewed upon. The specific hugo theme which I have used, [stack](https://themes.gohugo.io/hugo-theme-stack/), is a theme which contains [javascript](https://www.w3schools.com/js/DEFAULT.asp) code that allows the whole site to switch automatically between dark mode and light mode, based on the viewer device's colour theme of choice. The site can adapt and change its size in order to be suitable to be viewed upon almost any device.
 
 ### Screenshots
 
