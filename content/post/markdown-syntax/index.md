@@ -2,7 +2,7 @@
 draft = "false"
 author = "Hugo Authors"
 title = "Markdown Syntax Guide"
-date = "0001-01-01"
+date = "2001-01-01"
 description = "An article that details usage instructions for how I should edit the markdown files that are interpreted by the Hugo site builder engine."
 tags = [
     "markdown",

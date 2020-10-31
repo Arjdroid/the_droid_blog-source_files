@@ -27,7 +27,9 @@ I also like other things like playing videogames, doing sports, eating good food
 
 This website was built using [Hugo](https://gohugo.io), a powerful and fast open-source engine for building great static HTML websites. This website is being hosted by [GitHub](https://github.com), a fantastic resource enabling open-source content to be distributed accessibly worldwide. Most of the edits were made in [Atom](https://atom.io) a 'hackable text editor for the 21st century' supplemented by a [zsh](https://zsh.org) command shell running in an [Ubuntu](https://ubuntu.com) [WSL](https://docs.microsoft.com/en-us/windows/wsl/about) (Windows Subsystem for Linux) Terminal. The Hugo theme that I am using is [Stack](https://github.com/CaiJimmy/hugo-theme-stack/).
 
-All the photographs that appear on this website are shot by me, either on an [Olympus](https://www.olympus-global.com/) [OMD E-M10 Mark II]() micro-four-thirds digital mirrorless camera or on a Xiaomi POCOPHONE F1.
+THIS WEBSITE WILL NEVER STEAL YOUR DATA. THIS WEBSITE DOES NOT PUT COOKIES IN YOUR BROWSER. THE ONLY JAVASCRIPT CODE THAT IS USED IS FOR AUTOMATICALLY CHANGING THE COLOUR OF CERTAIN U.I ELEMENTS.
+
+All the photographs that appear on this website are shot by me, either on an [Olympus](https://www.olympus-global.com/) [OMD E-M10 Mark II](https://www.olympus.co.uk/site/en/c/cameras/om_d_system_cameras/om_d/e_m10_mark_ii/index.html) micro-four-thirds digital mirrorless camera or on a Xiaomi POCOPHONE F1.
 
 > Thanks for reading!
 

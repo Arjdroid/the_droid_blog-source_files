@@ -6,6 +6,31 @@ title = "The Droid Blog"
 #disqusShortname = "The Droid Blog"            # Change it to your Disqus shortname before using
 DefaultContentLanguage = "en"                   # Theme i18n support
 
+# Privacy
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
+
+
 [permalinks]
     post = "/p/:slug/"
     page = "/:slug/"
@@ -76,8 +101,20 @@ DefaultContentLanguage = "en"                   # Theme i18n support
         identifier = "archives"
         name = "Archives"
         url = "archives"
-        weight = -70
+        weight = -80
         pre = "archives"
+    [[menu.main]]
+        identifier = "rss"
+        name = "RSS"
+        url = "p/rss"
+        weight = -70
+        pre = "rss"
+    [[menu.main]]
+        identifier = "podcast"
+        name = "Podcast"
+        url = "podcast"
+        weight = -60
+        pre = "podcast"
 
 [related]
     includeNewer = true

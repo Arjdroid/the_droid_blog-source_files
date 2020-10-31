@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+      <clipPath id="keep-top-half-of-circle">
+        <rect x="0" y="0" width="24" height="5" />
+      </clipPath>
+      <clipPath id="keep-left-part-of-rectangle">
+        <rect x="0" y="0" width="8" height="16" />
+      </clipPath>
+      <clipPath id="keep-right-part-of-rectangle">
+        <rect x="16" y="0" width="7" height="16" />
+      </clipPath>
+      <clipPath id="keep-bottom-half-of-circle">
+          <rect x="0" y="12" width="24" height="12" />
+      </clipPath>
+      <clipPath id="keep-left-part-of-big-rectangle">
+          <rect x="0" y="0" width="5" height="24" />
+      </clipPath>
+      <clipPath id="keep-right-part-of-big-rectangle">
+          <rect x="16" y="0" width="7" height="24" />
+      </clipPath>
+  </defs>
+
+  <circle cx="12" cy="6" r="5" clip-path="url(#keep-top-half-of-circle)" />
+  <rect x="7" y="5" width="10" height="7" clip-path="url(#keep-left-part-of-rectangle)" stroke-linecap="square" stroke-linejoin="square" />
+  <rect x="7" y="5" width="10" height="7" clip-path="url(#keep-right-part-of-rectangle)" stroke-linecap="square" stroke-linejoin="square" />
+  <circle cx="12" cy="12" r="5" clip-path="url(#keep-bottom-half-of-circle)" />
+  <line x1="8" y1="6" x2="9.5" y2="6" />
+  <line x1="8" y1="9" x2="9.5" y2="9" />
+  <line x1="8" y1="12" x2="9.5" y2="12" />
+  <line x1="17" y1="6" x2="14.5" y2="6" />
+  <line x1="17" y1="9" x2="14.5" y2="9" />
+  <line x1="17" y1="12" x2="14.5" y2="12" />
+  <circle cx="12" cy="12" r="8" clip-path="url(#keep-bottom-half-of-circle)" />
+  <line x1="4" y1="12" x2="4" y2="8" />
+  <line x1="20" y1="12" x2="20" y2="8" />
+  <line x1="12" y1="20" x2="12" y2="24" />
+  <line x1="6" y1="24" x2="18" y2="24" />
+</svg>
